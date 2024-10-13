@@ -25,6 +25,12 @@ provider "citrix" {
   }
 }
 
+########################################################
+
+########################################################
+
+
+
 
 resource "citrix_admin_folder" "example-admin-folder-1" {
   name = var.mandant_prefix
@@ -71,7 +77,6 @@ variable "customer_id" {
 }
 
 
-
 variable "mandant_prefix" {
   description = "mandant prefix"
   type        = string
@@ -80,7 +85,6 @@ variable "mandant_prefix" {
 variable "citrix_deliverygroup_name" {
   description = "Name of the delivery group"
   type        = list(string)
-  #default     = ["002-P-HSD-NON-SIT-0020"]
 }
 
 variable "citrix_application_folder_path" {
