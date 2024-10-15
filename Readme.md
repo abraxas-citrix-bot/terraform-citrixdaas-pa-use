@@ -14,7 +14,18 @@ Have fun with Terraforming! :)
 ## Instructions for Using the Repository
 
 ### Step 1
-1. Create a Citrix API Key in the Citrix DaaS Tenant and enter it in the following format:
+1.The Secure Client in Citrix Cloud is the same as the SPN in Azure. It is used for authentication.
+
+- API clients in Citrix Cloud are always tied to one administrator and one customer. API clients are not visible to other administrators. If you want to access more than one customer, you must create API clients within each customer.
+- API clients are automatically restricted to the rights of the administrator that created it.
+
+To create an API client:
+
+Select the **Identity and Access Management** option from the menu.
+   - If this option does not appear, you do not have adequate permissions to create an API client. Contact your administrator to get the required permissions.
+Click **API Access**, then **Secure Clients**, and enter a name in the textbox adjacent to the button **Create Client**.
+After entering a name, click **Create Client**.
+2. Create a Citrix API Key in the Citrix DaaS Tenant and enter it in the following format:
    
     ```sh
     export TF_VAR_client_id="xxxxx"
