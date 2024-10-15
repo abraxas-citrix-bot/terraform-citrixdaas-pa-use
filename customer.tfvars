@@ -1,13 +1,7 @@
-environment_tag = "P"   # hier neue Umgebungstag eingeben
-customer        = "Kunde A" # hier neue Kundenname eingeben
-apckunde        = "Firma KGB"
-
-
-citrix_application_name                    = "CMD Citrix Terraform 💡 Innovator 🎬 Showcase" # wird in der Schlaufe mit Mandantenprefix erstellt
-citrix_application_description             = "Erleben Sie die Zukunft der Anwendungsbereitstellung mit unserer innovativen Demo, die die Leistungsfähigkeit von Citrix und Terraform vereint. Diese Showcase-Apps demonstrieren, wie Sie mit Terraform automatisiert und effizient Citrix-Umgebungen erstellen und verwalten können."
+citrix_application_name                    = "CMD Citrix Terraform 💡 Innovator 🎬 Showcase" #
 citrix_application_published_name          = "CMD Citrix-Terraform_Showcase"
-citrix_application_command_line_arguments  = "“%**”"
+citrix_application_description             = "Experience the future of application delivery with our innovative demo that combines the power of Citrix and Terraform. These showcase apps demonstrate how you can create and manage Citrix environments efficiently and automatically with Terraform."
 citrix_application_command_line_executable = "C:\\Windows\\system32\\cmd.exe"
-citrix_application_working_directory       = "%HOMEDRIVE%%HOMEPATH%"
-citrix_deliverygroup_name                  = ["DelieveryGruppe Name"]
-citrix_application_visibility              = ["domain\\citrixgruppe"]           # Benutzer oder Gruppe definieren
+citrix_deliverygroup_name                  = ["002-P-HSD-NON-SIT-0020"] # this is where the Delivery Group name is entered
+citrix_application_visibility              = ["m002\\axdlet"]           # user or AD group this is where the visibility is entered
+
