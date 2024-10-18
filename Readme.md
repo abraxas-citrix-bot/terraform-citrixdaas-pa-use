@@ -1,6 +1,6 @@
 # Terraform-Citrix-Playground
 
-Welcome to your new Terraform playground! This project is designed for testing Terraform and Citrix skills with a simple Terraform Module.
+Welcome to the Terraform scripts for deploying Citrix DaaS. This collection of scripts helps you efficiently and consistently implement Citrix DaaS.”
 
 **Note:** This project is intended for testing purposes only. Please do not use it for deploying production infrastructure.
 
@@ -28,7 +28,7 @@ Welcome to your new Terraform playground! This project is designed for testing T
 ## Usage
 
 ### Step 1: Download the Terraform Files
-- Download the Terraform files on Linux or WSL.
+- Ensure Terraform is installed on your system. You can download the latest version from the Terraform website.
 
 ### Step 2: Create an API Client and Set Environment Variables
 1. The Secure Client in Citrix Cloud is the same as the SPN in Azure. It is used for authentication.
