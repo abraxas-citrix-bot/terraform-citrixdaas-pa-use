@@ -1,8 +1,15 @@
 # Terraform-Citrix-Playground
 
-Welcome to the Terraform scripts for deploying Citrix DaaS. This collection of scripts helps you efficiently and consistently implement Citrix DaaS.”
+Welcome to the Terraform scripts for deploying Citrix DaaS. This collection of scripts helps you efficiently and consistently implement Citrix DaaS.
 
 **Note:** This project is intended for testing purposes only. Please do not use it for deploying production infrastructure.
+
+
+Feedback If you enjoyed this tutorial, please give this repo a star by clicking the star button at the top right of this page. ![Alt text](terraform/icons/shared.png) />
+
+
+
+
 
 ## Table of Contents
 - Prerequisites
@@ -40,8 +47,10 @@ Welcome to the Terraform scripts for deploying Citrix DaaS. This collection of s
    - If this option does not appear, you do not have adequate permissions to create an API client. Contact your administrator to get the required permissions.
 3. Click **API Access**, then **Secure Clients**, and enter a name in the textbox adjacent to the button **Create Client**.
 4. After entering a name, click **Create Client**.
-5. Create a Citrix API Key in the Citrix DaaS Tenant and enter it in the following format:
-   
+5. Create a Citrix API Key in the Citrix DaaS Tenant and note it down securely, for example in Notepad, in the following format. 
+   Then, enter it in the shell. 
+   Please ensure that the API key is not stored in the Git repository.
+
     ```sh
     export TF_VAR_client_id="xxxxx"
     export TF_VAR_client_secret="xxxxx"
