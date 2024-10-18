@@ -35,6 +35,7 @@ Welcome to your new Terraform playground! This project is designed for testing T
    - API clients in Citrix Cloud are always tied to one administrator and one customer. API clients are not visible to other administrators. If you want to access more than one customer, you must create API clients within each customer.
    - API clients are automatically restricted to the rights of the administrator that created it.
    - Citrix Cloud API Overview
+   - https://developer-docs.citrix.com/en-us/citrix-cloud/citrix-cloud-api-overview/get-started-with-citrix-cloud-apis.html
 2. To create an API client, select **Identity and Access Management** from the menu.
    - If this option does not appear, you do not have adequate permissions to create an API client. Contact your administrator to get the required permissions.
 3. Click **API Access**, then **Secure Clients**, and enter a name in the textbox adjacent to the button **Create Client**.
