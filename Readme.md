@@ -238,7 +238,10 @@ Execute `terraform destroy -auto-approve`.
 Would you like to see new projects in this repository? If you have ideas or suggestions for new projects that should be included, feel free to create an issue or submit a pull request.
 
 ## Contributing
-We welcome contributions! Please read our Contributing Guidelines for details on our code of conduct and the process for submitting pull requests.
+Thank you to all the people who have contributed to this project!
+@cedfont
+@abraxas-citrix-bot
+
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
