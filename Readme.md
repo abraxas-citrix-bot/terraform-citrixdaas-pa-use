@@ -13,28 +13,36 @@ Feedback If you enjoyed this tutorial, please give this repo a star by clicking 
 
 ## Table of Contents
 - [Prerequisites](#prerequisites)
-- Installation and Setup
-- Usage
-  - Step 1: Download the Terraform Files
-  - Step 2: Create an API Client and Set Environment Variables
-  - Step 3: Create TF Files or Clone this Repo
-  - Step 4: Initialize Terraform
-  - Step 5: Plan and Apply Terraform Configuration
-  - Step 6: Destroy Terraform Resources
-- Roadmap
-- Contributing
-- License
+- [Setup and Installation](#setup-and-installation)
+- [Usage Guide](#usage-guide)
+  - [Step 1: Clone the Repository](#step-1-clone-the-repository)
+  - [Step 2: Create an API Client and Set Environment Variables](#step-2-create-an-api-client-and-set-environment-variables)
+  - [Step 3: Review and Edit Terraform Files](#step-3-review-and-edit-terraform-files)
+  - [Step 4: Initialize Terraform](#step-4-initialize-terraform)
+  - [Step 5: Plan and Apply](#step-5-plan-and-apply)
+  - [Step 6: Destroy Resources](#step-6-destroy-resources)
+- [Roadmap](#roadmap)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Prerequisites
 - Terraform installed (we recommend installing Terraform on Linux or WSL)
 - Citrix Cloud account
 - Delivery Group
 
-## Installation and Setup
+## Setup and Installation
 
-## Usage
+## Usage Guide
 
-### Step 1: Download the Terraform Files
+### Step 1: Clone the Repository
+
+Begin by cloning this repository to your local machine:
+```bash
+git clone https://github.com/abraxas-citrix-bot/terraform-citrixdaas-pa-use.git
+cd terraform-citrixdaas-pa-use
+```
+
+### Step 3: Download the Terraform Files
 - Ensure Terraform is installed on your system. You can download the latest version from the Terraform website.
 
 ### Step 2: Create an API Client and Set Environment Variables
@@ -67,7 +75,7 @@ Feedback If you enjoyed this tutorial, please give this repo a star by clicking 
     $env:TF_VAR_citrix_deliverygroup_name='["dg_test"]' # name of delivery group
     $env:TF_VAR_citrix_application_visibility='["domain\\group"]'   # user or AD group for visibility
    ```
-   
+
 ### Step 3: Create TF Files or Clone this Repo
 
 - Please download this repository or create two files: `main.tf` and `customer.auto.tfvars`.
@@ -96,8 +104,6 @@ provider "citrix" {
     client_secret = var.client_secret
   }
 }
-
-
 
 ###############################################################################
 # Data Sources
@@ -204,10 +210,6 @@ variable "citrix_application_command_line_executable" {
   type        = string
 }
 
-
-
-
-
 variable "icon_path" {
   description = "Please enter the Path to the icon"
   type        = string
@@ -236,12 +238,12 @@ icon_path                                  = "icons/citrix.ico"
 Run `terraform init`.
 
 ### Step 5: Plan and Apply Terraform Configuration
-Execute `terraform plan`.
+Execute `terraform plan`
 
-Execute `terraform apply -auto-approve`.
+Execute `terraform apply -auto-approve`
 
 ### Step 6: Destroy Terraform Resources
-Execute `terraform destroy -auto-approve`.
+Execute `terraform destroy -auto-approve`
 
 ## Roadmap
 Would you like to see new projects in this repository? If you have ideas or suggestions for new projects that should be included, feel free to create an issue or submit a pull request.
