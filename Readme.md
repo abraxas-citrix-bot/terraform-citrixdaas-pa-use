@@ -7,19 +7,6 @@ Welcome to the Terraform scripts for deploying Citrix DaaS. This collection of s
 
 Feedback If you enjoyed this tutorial, please give this repo a star by clicking the star button at the top right of this page. ![Alt text](icons/shared.png) />
 
-## Table of Contents
-- [Prerequisites](#prerequisites)
-- [Setup and Installation](#setup-and-installation)
-- [Usage Guide](#usage-guide)
-  - [Step 1: Create an API Client and Set Environment Variables](#step-1-create-an-api-client-and-set-environment-variables)
-  - [Step 2: Review and Edit Terraform Files](#step-2-review-and-edit-terraform-files)
-  - [Step 3: Initialize Terraform](#step-3-initialize-terraform)
-  - [Step 4: Plan and Apply](#step-4-plan-and-apply)
-  - [Step 5: Destroy Resources](#step-5-destroy-resources)
-- [Roadmap](#roadmap)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## Prerequisites
 - Terraform installed (we recommend installing Terraform on Linux or WSL)
 - Citrix Cloud account
