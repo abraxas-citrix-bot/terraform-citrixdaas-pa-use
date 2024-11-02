@@ -5,7 +5,7 @@ Welcome to the Terraform scripts for deploying Citrix DaaS. This collection of s
 **Note:** This project is intended for testing purposes only. Please do not use it for deploying production infrastructure.
 
 
-Feedback If you enjoyed this tutorial, please give this repo a star by clicking the star button at the top right of this page. ![Alt text](icons/shared.png) />
+Feedback If you enjoyed this tutorial, please give this repo a star by clicking the star button at the top right of this page. ![Alt text](icons/shared.png)
 
 ## Prerequisites
 - Terraform installed (we recommend installing Terraform on Linux or WSL)
