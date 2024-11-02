@@ -11,12 +11,11 @@ Feedback If you enjoyed this tutorial, please give this repo a star by clicking 
 - [Prerequisites](#prerequisites)
 - [Setup and Installation](#setup-and-installation)
 - [Usage Guide](#usage-guide)
-  - [Step 1: Clone the Repository](#step-1-clone-the-repository)
-  - [Step 2: Create an API Client and Set Environment Variables](#step-2-create-an-api-client-and-set-environment-variables)
-  - [Step 3: Review and Edit Terraform Files](#step-3-review-and-edit-terraform-files)
-  - [Step 4: Initialize Terraform](#step-4-initialize-terraform)
-  - [Step 5: Plan and Apply](#step-5-plan-and-apply)
-  - [Step 6: Destroy Resources](#step-6-destroy-resources)
+  - [Step 1: Create an API Client and Set Environment Variables](#step-1-create-an-api-client-and-set-environment-variables)
+  - [Step 2: Review and Edit Terraform Files](#step-2-review-and-edit-terraform-files)
+  - [Step 3: Initialize Terraform](#step-3-initialize-terraform)
+  - [Step 4: Plan and Apply](#step-4-plan-and-apply)
+  - [Step 5: Destroy Resources](#step-5-destroy-resources)
 - [Roadmap](#roadmap)
 - [Contributing](#contributing)
 - [License](#license)
@@ -30,16 +29,9 @@ Feedback If you enjoyed this tutorial, please give this repo a star by clicking 
 
 ## Usage Guide
 
-### Step 1: Clone the Repository
-
-Begin by cloning this repository to your local machine:
-```bash
-git clone https://github.com/abraxas-citrix-bot/terraform-citrixdaas-pa-use.git
-cd terraform-citrixdaas-pa-use
-```
-
-### Step 3: Download the Terraform Files
+### Step 1: Download the Terraform Files
 - Ensure Terraform is installed on your system. You can download the latest version from the Terraform website.
+- https://developer.hashicorp.com/terraform/install
 
 ### Step 2: Create an API Client and Set Environment Variables
 1. The Secure Client in Citrix Cloud is the same as the SPN in Azure. It is used for authentication.
@@ -74,7 +66,13 @@ cd terraform-citrixdaas-pa-use
 
 ### Step 3: Create TF Files or Clone this Repo
 
-- Please download this repository or create two files: `main.tf` and `customer.auto.tfvars`.
+Begin by cloning this repository to your local machine:
+
+```bash
+git clone https://github.com/abraxas-citrix-bot/terraform-citrixdaas-pa-use.git
+cd terraform-citrixdaas-pa-use
+```
+- or create two files: `main.tf` and `customer.auto.tfvars`.
 - In the `customer.auto.tfvars` file, you can adjust the values as needed.
 
 <details>
