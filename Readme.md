@@ -7,10 +7,6 @@ Welcome to the Terraform scripts for deploying Citrix DaaS. This collection of s
 
 Feedback If you enjoyed this tutorial, please give this repo a star by clicking the star button at the top right of this page. ![Alt text](icons/shared.png) />
 
-
-ö
-
-
 ## Table of Contents
 - [Prerequisites](#prerequisites)
 - [Setup and Installation](#setup-and-installation)
@@ -80,6 +76,12 @@ cd terraform-citrixdaas-pa-use
 
 - Please download this repository or create two files: `main.tf` and `customer.auto.tfvars`.
 - In the `customer.auto.tfvars` file, you can adjust the values as needed.
+
+<details>
+<summary>Create TF Files</summary>
+<br>
+This is how you dropdown.
+
 
 **main.tf**
 ```hcl
@@ -233,6 +235,7 @@ citrix_application_command_line_executable = "C:\\Windows\\system32\\calc.exe"
 icon_path                                  = "icons/citrix.ico"
 ```
 
+</details>
 
 ### Step 4: Initialize Terraform
 Run `terraform init`.
