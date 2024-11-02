@@ -48,8 +48,8 @@ Feedback If you enjoyed this tutorial, please give this repo a star by clicking 
 3. Click **API Access**, then **Secure Clients**, and enter a name in the textbox adjacent to the button **Create Client**.
 4. After entering a name, click **Create Client**.
 5. Create a Citrix API Key in the Citrix DaaS Tenant and note it down securely, for example in Notepad, in the following format. 
-   Then, enter it in the shell. 
-   Please ensure that the API key is not stored in the Git repository.
+   Then, enter it in the linux WSL shell. 
+   Please ensure that the API key is not stored in the Git repository. 
 
     ```sh
     export TF_VAR_client_id="xxxxx"
@@ -59,6 +59,15 @@ Feedback If you enjoyed this tutorial, please give this repo a star by clicking 
     export TF_VAR_citrix_application_visibility='["domain\\group"]'   # user or AD group for visibility
     ```
 
+    Then, enter it in the windows Powershell.
+   ```sh
+    $env:TF_VAR_client_id="xxxxx"
+    $env:TF_VAR_client_secret="xxxxx"
+    $env:TF_VAR_customer_id="xxxx"
+    $env:TF_VAR_citrix_deliverygroup_name='["dg_test"]' # name of delivery group
+    $env:TF_VAR_citrix_application_visibility='["domain\\group"]'   # user or AD group for visibility
+   ```
+   
 ### Step 3: Create TF Files or Clone this Repo
 
 - Please download this repository or create two files: `main.tf` and `customer.auto.tfvars`.
